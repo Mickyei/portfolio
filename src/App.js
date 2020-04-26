@@ -30,6 +30,20 @@ class App extends Component {
   return (
     <Router>
       <div className="App">
+{/* <Navbar collapseOnSelect sticky="top" expand="lg" bg="light" variant="light">
+        <Navbar.Brand href="#home" className="nav-title" >Kotitreenaajan Käsikirja</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
+        <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="justify-content-end nav-links">
+          <Nav.Link href="#laihtuminen">Laihtuminen</Nav.Link>
+          <Nav.Link href="#treenit">Treenit</Nav.Link>
+          <Nav.Link href="#kysytyt">Usein Kysytyt</Nav.Link>
+        </Nav>
+        </Navbar.Collapse>
+      </Navbar> */}
+
+
         <Menu className="nav2" isOpen={this.state.menuOpen}  onStateChange={(state) => this.handleStateChange(state)} >
           <div className="nameplate">
             <h2 >Micky Kyei</h2>
