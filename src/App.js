@@ -30,7 +30,6 @@ class App extends Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-
         <div>
           <Home />
           <About />
