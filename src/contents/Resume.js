@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Resume extends Component {
     render() {
         return (
-            <div className="condiv resume">
+            <div className="condiv resume" id="resume">
 
                 <div className="experience resume-column">
                 <h2>Work Experience</h2>

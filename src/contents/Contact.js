@@ -5,7 +5,7 @@ class Contact extends Component {
 
     render(){
         return(
-            <div className="condiv contact">
+            <div className="condiv contact" id="contact">
                 <h2 className="contact-text contact-first" >Micky Kyei</h2>
                 <h3 className="contact-text">Phone: 0400201145</h3>
                 <h3 className="contact-text">Email: Micky.Kyei@gmail.com</h3>

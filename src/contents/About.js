@@ -5,14 +5,14 @@ class About extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            'StudentActive': false,
-            'AthleteActive': false,
-            'AthleteWidth': '50%',
-            'StudentWidth': '50%',
-            'AthleteDisplay': 'hidden',
-            'AthleteText': '0',
-            'StudentDisplay': 'none',
-            'StudentText': '0'
+            StudentActive: false,
+            AthleteActive: false,
+            AthleteWidth: '50%',
+            StudentWidth: '50%',
+            AthleteDisplay: 'hidden',
+            AthleteText: '0',
+            StudentDisplay: 'none',
+            StudentText: '0'
         }
 
     }
@@ -22,22 +22,22 @@ class About extends Component {
     toggleAthlete = (e) => {
         if (this.state.AthleteActive === true && this.state.StudentActive === false) {
             this.setState({
-                'AthleteWidth': '50%',
-                'StudentWidth': '50%',
-                'AthleteActive': false,
-                'AthleteDisplay': 'hidden',
-                'AthleteText': '0',
+                AthleteWidth: '50%',
+                StudentWidth: '50%',
+                AthleteActive: false,
+                AthleteDisplay: 'hidden',
+                AthleteText: '0',
             })
         } else {
             this.setState({
-                'AthleteWidth': '80%',
-                'StudentWidth': '20%',
-                'AthleteActive': true,
-                'StudentActive': false,
-                'AthleteDisplay': 'visible',
-                'AthleteText': '1',
-                'StudentDisplay': 'hidden',
-                'StudentText': '0'
+                AthleteWidth: '80%',
+                StudentWidth: '20%',
+                AthleteActive: true,
+                StudentActive: false,
+                AthleteDisplay: 'visible',
+                AthleteText: '1',
+                StudentDisplay: 'hidden',
+                StudentText: '0'
             })
         }
 
@@ -47,22 +47,22 @@ class About extends Component {
 
         if (this.state.AthleteActive === false && this.state.StudentActive === true) {
             this.setState({
-                'AthleteWidth': '50%',
-                'StudentWidth': '50%',
-                'StudentActive': false,
-                'StudentDisplay': 'none',
-                'StudentText': '0'
+                AthleteWidth: '50%',
+                StudentWidth: '50%',
+                StudentActive: false,
+                StudentDisplay: 'none',
+                StudentText: '0'
             })
         } else {
             this.setState({
-                'AthleteWidth': '20%',
-                'StudentWidth': '80%',
-                'AthleteActive': false,
-                'StudentActive': true,
-                'StudentDisplay': 'inline',
-                'StudentText': '1',
-                'AthleteDisplay': 'hidden',
-                'AthleteText': '0'
+                AthleteWidth: '20%',
+                StudentWidth: '80%',
+                AthleteActive: false,
+                StudentActive: true,
+                StudentDisplay: 'inline',
+                StudentText: '1',
+                AthleteDisplay: 'hidden',
+                AthleteText: '0'
             })
         }
     }
@@ -70,7 +70,7 @@ class About extends Component {
 
     render() {
         return (
-            <div className="condiv about">
+            <div className="condiv about" id="about">
                 <ul className="panelContainer">
                     <li className="aboutPanel athlete" style={{ width: this.state.AthleteWidth }} onClick={this.toggleAthlete} >
                         <h2>Athlete</h2>
